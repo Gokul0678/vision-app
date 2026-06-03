@@ -1,3 +1,13 @@
+---
+title: Vision App
+emoji: 🔍
+colorFrom: blue
+colorTo: purple
+sdk: docker
+pinned: false
+---
+<<<<<<< HEAD
+
 # 🔍 Object Detection App
 
 A web application that uses AI to detect and label objects in images in real time.
@@ -42,3 +52,16 @@ streamlit run app.py
 - Building REST APIs with FastAPI
 - Connecting a frontend to a backend
 - Deploying ML models as web services
+=======
+---
+title: Vision App
+emoji: 🏃
+colorFrom: indigo
+colorTo: indigo
+sdk: docker
+pinned: false
+license: mit
+---
+
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+>>>>>>> 22e1f62f0bdcd0d82bda1c92c668f3cc665b232f
