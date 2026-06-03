@@ -29,7 +29,7 @@ if uploaded_file is not None:
         st.subheader("🤖 Detected Objects")
         with st.spinner("AI is analyzing your image..."):
             files = {"file": uploaded_file.getvalue()}
-            response = requests.post("http://127.0.0.1:8000/detect", files=files)
+            response = requests.post("http://localhost:8000/detect", files=files)
 
         result_image = Image.open(io.BytesIO(response.content))
         st.image(result_image, use_column_width=True)
@@ -40,8 +40,7 @@ if uploaded_file is not None:
     st.success("Detection complete!")
     # Get detection details
     uploaded_file.seek(0)
-    detail_response = requests.post(
-        "http://127.0.0.1:8000/detect-details",
+    detail_response = requests.post("http://localhost:8000/detect-details",
         files={"file": uploaded_file.getvalue()}
     )
     data = detail_response.json()
